@@ -1,119 +1,54 @@
-/* Reset some default styles */
+/* Reset & base styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Set a modern font */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
-  background-color: #f5f7fa;
-  line-height: 1.6;
-}
-
-/* Header styling */
-header {
-  background-color: #fff;
-  padding: 20px 40px;
+  height: 100vh;
+  background: #ffffff;
+  font-family: 'Helvetica Neue', sans-serif;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  justify-content: center;
+  color: #111;
 }
 
-.logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #0073e6;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-nav a:hover,
-nav a.active {
-  color: #0073e6;
-  border-bottom: 2px solid #0073e6;
-  padding-bottom: 4px;
-}
-
-/* Hero Section */
-.hero {
-  padding: 100px 40px;
+/* Main container */
+.container {
   text-align: center;
-  background: linear-gradient(to right, #0073e6, #00b4d8);
-  color: #fff;
+  max-width: 600px;
+  padding: 20px;
 }
 
-.hero h1 {
+/* Headline */
+h1 {
   font-size: 3rem;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
+  font-weight: 600;
 }
 
-.hero p {
+/* Subtext */
+p {
   font-size: 1.2rem;
-  margin-bottom: 30px;
+  color: #555;
+  margin-bottom: 2rem;
 }
 
+/* Button */
 .btn {
   display: inline-block;
-  background-color: #fff;
-  color: #0073e6;
-  padding: 12px 24px;
-  border-radius: 5px;
-  font-weight: bold;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #111;
+  border: none;
+  border-radius: 6px;
   text-decoration: none;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #e0f0ff;
-  color: #005bb5;
-}
-
-/* Footer */
-footer {
-  background-color: #fff;
-  padding: 20px 40px;
-  text-align: center;
-  color: #666;
-  border-top: 1px solid #ddd;
-  margin-top: 80px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-  }
-
-  .hero h1 {
-    font-size: 2.2rem;
-  }
-
-  .btn {
-    padding: 10px 20px;
-  }
+  background-color: #333;
 }
